@@ -29,9 +29,9 @@ void draw() {
 
   for (int i = 0; i < values.length; ++i) {
     int realIndex = index + i;
-    println(realIndex);                                 //shows highest/lowest values of the realIndex
-    if (realIndex >= values.length) {
-      realIndex -= values.length;
+    println(realIndex);                                 //a.shows highest/lowest values of the realIndex
+    if (realIndex >= values.length) {                   //highest:399
+      realIndex -= values.length;                       //lowest:27
       
     }
     line(i*3, height-values[realIndex], i*3, height);
